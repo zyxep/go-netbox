@@ -84,6 +84,11 @@ func (o *IpamFhrpGroupsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam fhrp groups delete no content response
+func (o *IpamFhrpGroupsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamFhrpGroupsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/fhrp-groups/{id}/][%d] ipamFhrpGroupsDeleteNoContent ", 204)
 }

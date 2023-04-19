@@ -84,6 +84,11 @@ func (o *ExtrasJournalEntriesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras journal entries bulk delete no content response
+func (o *ExtrasJournalEntriesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasJournalEntriesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/journal-entries/][%d] extrasJournalEntriesBulkDeleteNoContent ", 204)
 }

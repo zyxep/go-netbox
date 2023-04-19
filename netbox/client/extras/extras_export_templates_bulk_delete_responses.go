@@ -84,6 +84,11 @@ func (o *ExtrasExportTemplatesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras export templates bulk delete no content response
+func (o *ExtrasExportTemplatesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasExportTemplatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/export-templates/][%d] extrasExportTemplatesBulkDeleteNoContent ", 204)
 }

@@ -88,6 +88,11 @@ func (o *CircuitsCircuitTerminationsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the circuits circuit terminations read o k response
+func (o *CircuitsCircuitTerminationsReadOK) Code() int {
+	return 200
+}
+
 func (o *CircuitsCircuitTerminationsReadOK) Error() string {
 	return fmt.Sprintf("[GET /circuits/circuit-terminations/{id}/][%d] circuitsCircuitTerminationsReadOK  %+v", 200, o.Payload)
 }

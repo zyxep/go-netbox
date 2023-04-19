@@ -84,6 +84,11 @@ func (o *DcimVirtualChassisBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim virtual chassis bulk delete no content response
+func (o *DcimVirtualChassisBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimVirtualChassisBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/virtual-chassis/][%d] dcimVirtualChassisBulkDeleteNoContent ", 204)
 }

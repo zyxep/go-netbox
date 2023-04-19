@@ -93,6 +93,11 @@ func (o *VirtualizationInterfacesListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the virtualization interfaces list o k response
+func (o *VirtualizationInterfacesListOK) Code() int {
+	return 200
+}
+
 func (o *VirtualizationInterfacesListOK) Error() string {
 	return fmt.Sprintf("[GET /virtualization/interfaces/][%d] virtualizationInterfacesListOK  %+v", 200, o.Payload)
 }

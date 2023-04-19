@@ -88,6 +88,11 @@ func (o *IpamRouteTargetsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam route targets create created response
+func (o *IpamRouteTargetsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamRouteTargetsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/route-targets/][%d] ipamRouteTargetsCreateCreated  %+v", 201, o.Payload)
 }

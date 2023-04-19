@@ -88,6 +88,11 @@ func (o *VirtualizationClusterTypesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the virtualization cluster types create created response
+func (o *VirtualizationClusterTypesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *VirtualizationClusterTypesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /virtualization/cluster-types/][%d] virtualizationClusterTypesCreateCreated  %+v", 201, o.Payload)
 }

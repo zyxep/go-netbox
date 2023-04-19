@@ -88,6 +88,11 @@ func (o *CircuitsProviderNetworksCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the circuits provider networks create created response
+func (o *CircuitsProviderNetworksCreateCreated) Code() int {
+	return 201
+}
+
 func (o *CircuitsProviderNetworksCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /circuits/provider-networks/][%d] circuitsProviderNetworksCreateCreated  %+v", 201, o.Payload)
 }

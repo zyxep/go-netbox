@@ -84,6 +84,11 @@ func (o *DcimConsoleServerPortsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim console server ports delete no content response
+func (o *DcimConsoleServerPortsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimConsoleServerPortsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/console-server-ports/{id}/][%d] dcimConsoleServerPortsDeleteNoContent ", 204)
 }

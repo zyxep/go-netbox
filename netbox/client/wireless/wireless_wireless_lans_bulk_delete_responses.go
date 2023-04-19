@@ -84,6 +84,11 @@ func (o *WirelessWirelessLansBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the wireless wireless lans bulk delete no content response
+func (o *WirelessWirelessLansBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *WirelessWirelessLansBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /wireless/wireless-lans/][%d] wirelessWirelessLansBulkDeleteNoContent ", 204)
 }

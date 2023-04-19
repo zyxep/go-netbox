@@ -84,6 +84,11 @@ func (o *DcimDeviceRolesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim device roles delete no content response
+func (o *DcimDeviceRolesDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimDeviceRolesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/device-roles/{id}/][%d] dcimDeviceRolesDeleteNoContent ", 204)
 }

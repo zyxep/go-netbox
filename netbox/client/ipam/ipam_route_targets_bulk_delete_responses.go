@@ -84,6 +84,11 @@ func (o *IpamRouteTargetsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam route targets bulk delete no content response
+func (o *IpamRouteTargetsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamRouteTargetsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/route-targets/][%d] ipamRouteTargetsBulkDeleteNoContent ", 204)
 }

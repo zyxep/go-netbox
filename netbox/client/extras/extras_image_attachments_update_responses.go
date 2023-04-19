@@ -88,6 +88,11 @@ func (o *ExtrasImageAttachmentsUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras image attachments update o k response
+func (o *ExtrasImageAttachmentsUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasImageAttachmentsUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/image-attachments/{id}/][%d] extrasImageAttachmentsUpdateOK  %+v", 200, o.Payload)
 }

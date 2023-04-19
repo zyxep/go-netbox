@@ -88,6 +88,11 @@ func (o *ExtrasJournalEntriesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the extras journal entries create created response
+func (o *ExtrasJournalEntriesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *ExtrasJournalEntriesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/journal-entries/][%d] extrasJournalEntriesCreateCreated  %+v", 201, o.Payload)
 }

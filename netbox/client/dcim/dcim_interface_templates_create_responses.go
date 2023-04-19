@@ -88,6 +88,11 @@ func (o *DcimInterfaceTemplatesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the dcim interface templates create created response
+func (o *DcimInterfaceTemplatesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *DcimInterfaceTemplatesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/interface-templates/][%d] dcimInterfaceTemplatesCreateCreated  %+v", 201, o.Payload)
 }

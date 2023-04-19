@@ -88,6 +88,11 @@ func (o *IpamRolesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam roles create created response
+func (o *IpamRolesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamRolesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/roles/][%d] ipamRolesCreateCreated  %+v", 201, o.Payload)
 }

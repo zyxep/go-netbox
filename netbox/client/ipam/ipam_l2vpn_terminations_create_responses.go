@@ -88,6 +88,11 @@ func (o *IpamL2vpnTerminationsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam l2vpn terminations create created response
+func (o *IpamL2vpnTerminationsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamL2vpnTerminationsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/l2vpn-terminations/][%d] ipamL2vpnTerminationsCreateCreated  %+v", 201, o.Payload)
 }

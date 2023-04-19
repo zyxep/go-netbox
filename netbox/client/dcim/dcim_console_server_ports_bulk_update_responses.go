@@ -88,6 +88,11 @@ func (o *DcimConsoleServerPortsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the dcim console server ports bulk update o k response
+func (o *DcimConsoleServerPortsBulkUpdateOK) Code() int {
+	return 200
+}
+
 func (o *DcimConsoleServerPortsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /dcim/console-server-ports/][%d] dcimConsoleServerPortsBulkUpdateOK  %+v", 200, o.Payload)
 }

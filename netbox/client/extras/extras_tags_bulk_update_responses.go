@@ -88,6 +88,11 @@ func (o *ExtrasTagsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras tags bulk update o k response
+func (o *ExtrasTagsBulkUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasTagsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/tags/][%d] extrasTagsBulkUpdateOK  %+v", 200, o.Payload)
 }

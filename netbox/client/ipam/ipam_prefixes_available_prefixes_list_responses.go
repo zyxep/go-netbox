@@ -88,6 +88,11 @@ func (o *IpamPrefixesAvailablePrefixesListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the ipam prefixes available prefixes list o k response
+func (o *IpamPrefixesAvailablePrefixesListOK) Code() int {
+	return 200
+}
+
 func (o *IpamPrefixesAvailablePrefixesListOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/prefixes/{id}/available-prefixes/][%d] ipamPrefixesAvailablePrefixesListOK  %+v", 200, o.Payload)
 }

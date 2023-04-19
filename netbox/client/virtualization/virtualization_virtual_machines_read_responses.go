@@ -88,6 +88,11 @@ func (o *VirtualizationVirtualMachinesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the virtualization virtual machines read o k response
+func (o *VirtualizationVirtualMachinesReadOK) Code() int {
+	return 200
+}
+
 func (o *VirtualizationVirtualMachinesReadOK) Error() string {
 	return fmt.Sprintf("[GET /virtualization/virtual-machines/{id}/][%d] virtualizationVirtualMachinesReadOK  %+v", 200, o.Payload)
 }

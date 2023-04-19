@@ -84,6 +84,11 @@ func (o *ExtrasConfigContextsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras config contexts delete no content response
+func (o *ExtrasConfigContextsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasConfigContextsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/config-contexts/{id}/][%d] extrasConfigContextsDeleteNoContent ", 204)
 }

@@ -84,6 +84,11 @@ func (o *DcimRackReservationsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim rack reservations delete no content response
+func (o *DcimRackReservationsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimRackReservationsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/rack-reservations/{id}/][%d] dcimRackReservationsDeleteNoContent ", 204)
 }

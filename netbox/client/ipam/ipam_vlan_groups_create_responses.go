@@ -88,6 +88,11 @@ func (o *IpamVlanGroupsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam vlan groups create created response
+func (o *IpamVlanGroupsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamVlanGroupsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/vlan-groups/][%d] ipamVlanGroupsCreateCreated  %+v", 201, o.Payload)
 }

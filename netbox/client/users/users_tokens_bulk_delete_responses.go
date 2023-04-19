@@ -84,6 +84,11 @@ func (o *UsersTokensBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the users tokens bulk delete no content response
+func (o *UsersTokensBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *UsersTokensBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /users/tokens/][%d] usersTokensBulkDeleteNoContent ", 204)
 }

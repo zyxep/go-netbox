@@ -84,6 +84,11 @@ func (o *ExtrasReportsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras reports read o k response
+func (o *ExtrasReportsReadOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasReportsReadOK) Error() string {
 	return fmt.Sprintf("[GET /extras/reports/{id}/][%d] extrasReportsReadOK ", 200)
 }

@@ -84,6 +84,11 @@ func (o *VirtualizationInterfacesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the virtualization interfaces delete no content response
+func (o *VirtualizationInterfacesDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *VirtualizationInterfacesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /virtualization/interfaces/{id}/][%d] virtualizationInterfacesDeleteNoContent ", 204)
 }

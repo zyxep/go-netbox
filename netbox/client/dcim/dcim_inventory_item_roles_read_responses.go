@@ -88,6 +88,11 @@ func (o *DcimInventoryItemRolesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the dcim inventory item roles read o k response
+func (o *DcimInventoryItemRolesReadOK) Code() int {
+	return 200
+}
+
 func (o *DcimInventoryItemRolesReadOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/inventory-item-roles/{id}/][%d] dcimInventoryItemRolesReadOK  %+v", 200, o.Payload)
 }

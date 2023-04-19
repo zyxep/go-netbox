@@ -88,6 +88,11 @@ func (o *DcimInventoryItemsUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the dcim inventory items update o k response
+func (o *DcimInventoryItemsUpdateOK) Code() int {
+	return 200
+}
+
 func (o *DcimInventoryItemsUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /dcim/inventory-items/{id}/][%d] dcimInventoryItemsUpdateOK  %+v", 200, o.Payload)
 }

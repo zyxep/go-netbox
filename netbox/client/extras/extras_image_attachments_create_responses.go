@@ -88,6 +88,11 @@ func (o *ExtrasImageAttachmentsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the extras image attachments create created response
+func (o *ExtrasImageAttachmentsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *ExtrasImageAttachmentsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/image-attachments/][%d] extrasImageAttachmentsCreateCreated  %+v", 201, o.Payload)
 }

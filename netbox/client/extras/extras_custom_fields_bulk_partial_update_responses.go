@@ -88,6 +88,11 @@ func (o *ExtrasCustomFieldsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras custom fields bulk partial update o k response
+func (o *ExtrasCustomFieldsBulkPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasCustomFieldsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/custom-fields/][%d] extrasCustomFieldsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

@@ -88,6 +88,11 @@ func (o *UsersPermissionsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the users permissions bulk partial update o k response
+func (o *UsersPermissionsBulkPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *UsersPermissionsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /users/permissions/][%d] usersPermissionsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

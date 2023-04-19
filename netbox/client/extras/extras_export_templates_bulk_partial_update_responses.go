@@ -88,6 +88,11 @@ func (o *ExtrasExportTemplatesBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras export templates bulk partial update o k response
+func (o *ExtrasExportTemplatesBulkPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasExportTemplatesBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/export-templates/][%d] extrasExportTemplatesBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

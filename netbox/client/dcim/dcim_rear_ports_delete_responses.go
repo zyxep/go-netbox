@@ -84,6 +84,11 @@ func (o *DcimRearPortsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim rear ports delete no content response
+func (o *DcimRearPortsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimRearPortsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/rear-ports/{id}/][%d] dcimRearPortsDeleteNoContent ", 204)
 }

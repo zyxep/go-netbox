@@ -88,6 +88,11 @@ func (o *ExtrasContentTypesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras content types read o k response
+func (o *ExtrasContentTypesReadOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasContentTypesReadOK) Error() string {
 	return fmt.Sprintf("[GET /extras/content-types/{id}/][%d] extrasContentTypesReadOK  %+v", 200, o.Payload)
 }

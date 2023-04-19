@@ -84,6 +84,11 @@ func (o *IpamVrfsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam vrfs delete no content response
+func (o *IpamVrfsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamVrfsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/vrfs/{id}/][%d] ipamVrfsDeleteNoContent ", 204)
 }

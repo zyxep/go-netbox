@@ -84,6 +84,11 @@ func (o *ExtrasWebhooksDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras webhooks delete no content response
+func (o *ExtrasWebhooksDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasWebhooksDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/webhooks/{id}/][%d] extrasWebhooksDeleteNoContent ", 204)
 }

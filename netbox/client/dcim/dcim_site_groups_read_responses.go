@@ -88,6 +88,11 @@ func (o *DcimSiteGroupsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the dcim site groups read o k response
+func (o *DcimSiteGroupsReadOK) Code() int {
+	return 200
+}
+
 func (o *DcimSiteGroupsReadOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/site-groups/{id}/][%d] dcimSiteGroupsReadOK  %+v", 200, o.Payload)
 }

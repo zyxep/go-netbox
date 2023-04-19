@@ -93,6 +93,11 @@ func (o *TenancyContactGroupsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the tenancy contact groups list o k response
+func (o *TenancyContactGroupsListOK) Code() int {
+	return 200
+}
+
 func (o *TenancyContactGroupsListOK) Error() string {
 	return fmt.Sprintf("[GET /tenancy/contact-groups/][%d] tenancyContactGroupsListOK  %+v", 200, o.Payload)
 }

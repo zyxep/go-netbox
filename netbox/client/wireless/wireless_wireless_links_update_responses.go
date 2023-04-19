@@ -88,6 +88,11 @@ func (o *WirelessWirelessLinksUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the wireless wireless links update o k response
+func (o *WirelessWirelessLinksUpdateOK) Code() int {
+	return 200
+}
+
 func (o *WirelessWirelessLinksUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /wireless/wireless-links/{id}/][%d] wirelessWirelessLinksUpdateOK  %+v", 200, o.Payload)
 }

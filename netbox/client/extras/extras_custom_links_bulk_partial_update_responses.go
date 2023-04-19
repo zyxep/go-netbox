@@ -88,6 +88,11 @@ func (o *ExtrasCustomLinksBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras custom links bulk partial update o k response
+func (o *ExtrasCustomLinksBulkPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasCustomLinksBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/custom-links/][%d] extrasCustomLinksBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

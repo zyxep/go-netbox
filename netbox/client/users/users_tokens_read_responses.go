@@ -88,6 +88,11 @@ func (o *UsersTokensReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the users tokens read o k response
+func (o *UsersTokensReadOK) Code() int {
+	return 200
+}
+
 func (o *UsersTokensReadOK) Error() string {
 	return fmt.Sprintf("[GET /users/tokens/{id}/][%d] usersTokensReadOK  %+v", 200, o.Payload)
 }

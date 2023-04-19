@@ -88,6 +88,11 @@ func (o *IpamIPRangesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the ipam Ip ranges read o k response
+func (o *IpamIPRangesReadOK) Code() int {
+	return 200
+}
+
 func (o *IpamIPRangesReadOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/ip-ranges/{id}/][%d] ipamIpRangesReadOK  %+v", 200, o.Payload)
 }

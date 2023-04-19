@@ -88,6 +88,11 @@ func (o *VirtualizationVirtualMachinesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the virtualization virtual machines create created response
+func (o *VirtualizationVirtualMachinesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *VirtualizationVirtualMachinesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /virtualization/virtual-machines/][%d] virtualizationVirtualMachinesCreateCreated  %+v", 201, o.Payload)
 }

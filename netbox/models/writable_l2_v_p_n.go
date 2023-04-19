@@ -36,6 +36,9 @@ import (
 // swagger:model WritableL2VPN
 type WritableL2VPN struct {
 
+	// Comments
+	Comments string `json:"comments,omitempty"`
+
 	// Created
 	// Read Only: true
 	// Format: date-time
@@ -61,8 +64,8 @@ type WritableL2VPN struct {
 	ID int64 `json:"id,omitempty"`
 
 	// Identifier
-	// Maximum: 2.147483647e+09
-	// Minimum: -2.147483648e+09
+	// Maximum: 9.223372036854776e+18
+	// Minimum: -9.223372036854776e+18
 	Identifier *int64 `json:"identifier,omitempty"`
 
 	// import targets
@@ -199,11 +202,11 @@ func (m *WritableL2VPN) validateIdentifier(formats strfmt.Registry) error {
 		return nil
 	}
 
-	if err := validate.MinimumInt("identifier", "body", *m.Identifier, -2.147483648e+09, false); err != nil {
+	if err := validate.MinimumInt("identifier", "body", *m.Identifier, -9.223372036854776e+18, false); err != nil {
 		return err
 	}
 
-	if err := validate.MaximumInt("identifier", "body", *m.Identifier, 2.147483647e+09, false); err != nil {
+	if err := validate.MaximumInt("identifier", "body", *m.Identifier, 9.223372036854776e+18, false); err != nil {
 		return err
 	}
 

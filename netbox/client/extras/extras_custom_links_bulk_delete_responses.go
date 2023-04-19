@@ -84,6 +84,11 @@ func (o *ExtrasCustomLinksBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras custom links bulk delete no content response
+func (o *ExtrasCustomLinksBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasCustomLinksBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/custom-links/][%d] extrasCustomLinksBulkDeleteNoContent ", 204)
 }

@@ -84,6 +84,11 @@ func (o *DcimPowerPanelsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim power panels bulk delete no content response
+func (o *DcimPowerPanelsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimPowerPanelsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/power-panels/][%d] dcimPowerPanelsBulkDeleteNoContent ", 204)
 }

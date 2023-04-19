@@ -57,7 +57,7 @@ type FHRPGroupAssignment struct {
 
 	// Interface id
 	// Required: true
-	// Maximum: 2.147483647e+09
+	// Maximum: 9.223372036854776e+18
 	// Minimum: 0
 	InterfaceID *int64 `json:"interface_id"`
 
@@ -162,7 +162,7 @@ func (m *FHRPGroupAssignment) validateInterfaceID(formats strfmt.Registry) error
 		return err
 	}
 
-	if err := validate.MaximumInt("interface_id", "body", *m.InterfaceID, 2.147483647e+09, false); err != nil {
+	if err := validate.MaximumInt("interface_id", "body", *m.InterfaceID, 9.223372036854776e+18, false); err != nil {
 		return err
 	}
 

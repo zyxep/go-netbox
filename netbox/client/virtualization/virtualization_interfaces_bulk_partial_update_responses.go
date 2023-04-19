@@ -88,6 +88,11 @@ func (o *VirtualizationInterfacesBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the virtualization interfaces bulk partial update o k response
+func (o *VirtualizationInterfacesBulkPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *VirtualizationInterfacesBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /virtualization/interfaces/][%d] virtualizationInterfacesBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

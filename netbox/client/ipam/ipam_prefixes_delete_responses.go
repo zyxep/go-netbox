@@ -84,6 +84,11 @@ func (o *IpamPrefixesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam prefixes delete no content response
+func (o *IpamPrefixesDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamPrefixesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/prefixes/{id}/][%d] ipamPrefixesDeleteNoContent ", 204)
 }

@@ -88,6 +88,11 @@ func (o *IpamPrefixesAvailablePrefixesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam prefixes available prefixes create created response
+func (o *IpamPrefixesAvailablePrefixesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamPrefixesAvailablePrefixesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/prefixes/{id}/available-prefixes/][%d] ipamPrefixesAvailablePrefixesCreateCreated  %+v", 201, o.Payload)
 }

@@ -84,6 +84,11 @@ func (o *IpamAggregatesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam aggregates bulk delete no content response
+func (o *IpamAggregatesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamAggregatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/aggregates/][%d] ipamAggregatesBulkDeleteNoContent ", 204)
 }

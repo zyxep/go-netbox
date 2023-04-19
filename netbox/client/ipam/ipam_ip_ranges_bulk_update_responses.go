@@ -88,6 +88,11 @@ func (o *IpamIPRangesBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the ipam Ip ranges bulk update o k response
+func (o *IpamIPRangesBulkUpdateOK) Code() int {
+	return 200
+}
+
 func (o *IpamIPRangesBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /ipam/ip-ranges/][%d] ipamIpRangesBulkUpdateOK  %+v", 200, o.Payload)
 }

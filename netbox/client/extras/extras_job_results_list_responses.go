@@ -93,6 +93,11 @@ func (o *ExtrasJobResultsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras job results list o k response
+func (o *ExtrasJobResultsListOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasJobResultsListOK) Error() string {
 	return fmt.Sprintf("[GET /extras/job-results/][%d] extrasJobResultsListOK  %+v", 200, o.Payload)
 }

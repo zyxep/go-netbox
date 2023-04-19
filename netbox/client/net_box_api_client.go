@@ -29,6 +29,7 @@ import (
 	"github.com/smutel/go-netbox/v3/netbox/client/dcim"
 	"github.com/smutel/go-netbox/v3/netbox/client/extras"
 	"github.com/smutel/go-netbox/v3/netbox/client/ipam"
+	"github.com/smutel/go-netbox/v3/netbox/client/plugins"
 	"github.com/smutel/go-netbox/v3/netbox/client/status"
 	"github.com/smutel/go-netbox/v3/netbox/client/tenancy"
 	"github.com/smutel/go-netbox/v3/netbox/client/users"
@@ -42,7 +43,7 @@ var Default = NewHTTPClient(nil)
 const (
 	// DefaultHost is the default Host
 	// found in Meta (info) section of spec file
-	DefaultHost string = "127.0.0.1:8000"
+	DefaultHost string = "netbox.agillic.net"
 	// DefaultBasePath is the default BasePath
 	// found in Meta (info) section of spec file
 	DefaultBasePath string = "/api"
@@ -82,6 +83,7 @@ func New(transport runtime.ClientTransport, formats strfmt.Registry) *NetBoxAPI 
 	cli.Dcim = dcim.New(transport, formats)
 	cli.Extras = extras.New(transport, formats)
 	cli.Ipam = ipam.New(transport, formats)
+	cli.Plugins = plugins.New(transport, formats)
 	cli.Status = status.New(transport, formats)
 	cli.Tenancy = tenancy.New(transport, formats)
 	cli.Users = users.New(transport, formats)
@@ -139,6 +141,8 @@ type NetBoxAPI struct {
 
 	Ipam ipam.ClientService
 
+	Plugins plugins.ClientService
+
 	Status status.ClientService
 
 	Tenancy tenancy.ClientService
@@ -159,6 +163,7 @@ func (c *NetBoxAPI) SetTransport(transport runtime.ClientTransport) {
 	c.Dcim.SetTransport(transport)
 	c.Extras.SetTransport(transport)
 	c.Ipam.SetTransport(transport)
+	c.Plugins.SetTransport(transport)
 	c.Status.SetTransport(transport)
 	c.Tenancy.SetTransport(transport)
 	c.Users.SetTransport(transport)

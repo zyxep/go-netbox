@@ -84,6 +84,11 @@ func (o *VirtualizationClustersBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the virtualization clusters bulk delete no content response
+func (o *VirtualizationClustersBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *VirtualizationClustersBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /virtualization/clusters/][%d] virtualizationClustersBulkDeleteNoContent ", 204)
 }

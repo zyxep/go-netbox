@@ -84,6 +84,11 @@ func (o *ExtrasConfigContextsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras config contexts bulk delete no content response
+func (o *ExtrasConfigContextsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasConfigContextsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/config-contexts/][%d] extrasConfigContextsBulkDeleteNoContent ", 204)
 }

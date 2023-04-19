@@ -84,6 +84,11 @@ func (o *UsersConfigListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the users config list o k response
+func (o *UsersConfigListOK) Code() int {
+	return 200
+}
+
 func (o *UsersConfigListOK) Error() string {
 	return fmt.Sprintf("[GET /users/config/][%d] usersConfigListOK ", 200)
 }

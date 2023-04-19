@@ -88,6 +88,11 @@ func (o *ExtrasWebhooksUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras webhooks update o k response
+func (o *ExtrasWebhooksUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasWebhooksUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/webhooks/{id}/][%d] extrasWebhooksUpdateOK  %+v", 200, o.Payload)
 }

@@ -88,6 +88,11 @@ func (o *DcimSiteGroupsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the dcim site groups create created response
+func (o *DcimSiteGroupsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *DcimSiteGroupsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/site-groups/][%d] dcimSiteGroupsCreateCreated  %+v", 201, o.Payload)
 }

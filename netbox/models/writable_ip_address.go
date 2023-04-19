@@ -47,12 +47,15 @@ type WritableIPAddress struct {
 	AssignedObject interface{} `json:"assigned_object,omitempty"`
 
 	// Assigned object id
-	// Maximum: 2.147483647e+09
+	// Maximum: 9.223372036854776e+18
 	// Minimum: 0
 	AssignedObjectID *int64 `json:"assigned_object_id,omitempty"`
 
 	// Assigned object type
 	AssignedObjectType *string `json:"assigned_object_type,omitempty"`
+
+	// Comments
+	Comments string `json:"comments,omitempty"`
 
 	// Created
 	// Read Only: true
@@ -108,7 +111,7 @@ type WritableIPAddress struct {
 	// Status
 	//
 	// The operational status of this IP
-	// Enum: [active reserved deprecated dhcp slaac]
+	// Enum: [active reserved deprecated dhcp slaac DHCP_Reserved]
 	Status string `json:"status,omitempty"`
 
 	// tags
@@ -198,7 +201,7 @@ func (m *WritableIPAddress) validateAssignedObjectID(formats strfmt.Registry) er
 		return err
 	}
 
-	if err := validate.MaximumInt("assigned_object_id", "body", *m.AssignedObjectID, 2.147483647e+09, false); err != nil {
+	if err := validate.MaximumInt("assigned_object_id", "body", *m.AssignedObjectID, 9.223372036854776e+18, false); err != nil {
 		return err
 	}
 
@@ -347,7 +350,7 @@ var writableIpAddressTypeStatusPropEnum []interface{}
 
 func init() {
 	var res []string
-	if err := json.Unmarshal([]byte(`["active","reserved","deprecated","dhcp","slaac"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["active","reserved","deprecated","dhcp","slaac","DHCP_Reserved"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
@@ -371,6 +374,9 @@ const (
 
 	// WritableIPAddressStatusSlaac captures enum value "slaac"
 	WritableIPAddressStatusSlaac string = "slaac"
+
+	// WritableIPAddressStatusDHCPReserved captures enum value "DHCP_Reserved"
+	WritableIPAddressStatusDHCPReserved string = "DHCP_Reserved"
 )
 
 // prop value enum

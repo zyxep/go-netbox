@@ -84,6 +84,11 @@ func (o *IpamL2vpnTerminationsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam l2vpn terminations delete no content response
+func (o *IpamL2vpnTerminationsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamL2vpnTerminationsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/l2vpn-terminations/{id}/][%d] ipamL2vpnTerminationsDeleteNoContent ", 204)
 }

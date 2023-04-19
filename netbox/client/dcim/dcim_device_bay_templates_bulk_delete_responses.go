@@ -84,6 +84,11 @@ func (o *DcimDeviceBayTemplatesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim device bay templates bulk delete no content response
+func (o *DcimDeviceBayTemplatesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimDeviceBayTemplatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/device-bay-templates/][%d] dcimDeviceBayTemplatesBulkDeleteNoContent ", 204)
 }

@@ -88,6 +88,11 @@ func (o *ExtrasWebhooksCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the extras webhooks create created response
+func (o *ExtrasWebhooksCreateCreated) Code() int {
+	return 201
+}
+
 func (o *ExtrasWebhooksCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/webhooks/][%d] extrasWebhooksCreateCreated  %+v", 201, o.Payload)
 }

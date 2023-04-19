@@ -88,6 +88,11 @@ func (o *IpamAggregatesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam aggregates create created response
+func (o *IpamAggregatesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamAggregatesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/aggregates/][%d] ipamAggregatesCreateCreated  %+v", 201, o.Payload)
 }

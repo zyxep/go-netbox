@@ -84,6 +84,11 @@ func (o *DcimInterfaceTemplatesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim interface templates delete no content response
+func (o *DcimInterfaceTemplatesDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimInterfaceTemplatesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/interface-templates/{id}/][%d] dcimInterfaceTemplatesDeleteNoContent ", 204)
 }

@@ -88,6 +88,11 @@ func (o *UsersPermissionsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the users permissions read o k response
+func (o *UsersPermissionsReadOK) Code() int {
+	return 200
+}
+
 func (o *UsersPermissionsReadOK) Error() string {
 	return fmt.Sprintf("[GET /users/permissions/{id}/][%d] usersPermissionsReadOK  %+v", 200, o.Payload)
 }

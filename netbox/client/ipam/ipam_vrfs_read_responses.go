@@ -88,6 +88,11 @@ func (o *IpamVrfsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the ipam vrfs read o k response
+func (o *IpamVrfsReadOK) Code() int {
+	return 200
+}
+
 func (o *IpamVrfsReadOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/vrfs/{id}/][%d] ipamVrfsReadOK  %+v", 200, o.Payload)
 }

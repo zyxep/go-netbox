@@ -93,6 +93,11 @@ func (o *ExtrasExportTemplatesListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras export templates list o k response
+func (o *ExtrasExportTemplatesListOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasExportTemplatesListOK) Error() string {
 	return fmt.Sprintf("[GET /extras/export-templates/][%d] extrasExportTemplatesListOK  %+v", 200, o.Payload)
 }

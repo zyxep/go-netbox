@@ -88,6 +88,11 @@ func (o *ExtrasConfigContextsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras config contexts bulk update o k response
+func (o *ExtrasConfigContextsBulkUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasConfigContextsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/config-contexts/][%d] extrasConfigContextsBulkUpdateOK  %+v", 200, o.Payload)
 }

@@ -88,6 +88,11 @@ func (o *ExtrasTagsPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras tags partial update o k response
+func (o *ExtrasTagsPartialUpdateOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasTagsPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/tags/{id}/][%d] extrasTagsPartialUpdateOK  %+v", 200, o.Payload)
 }

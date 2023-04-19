@@ -84,6 +84,11 @@ func (o *DcimPowerOutletTemplatesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the dcim power outlet templates bulk delete no content response
+func (o *DcimPowerOutletTemplatesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimPowerOutletTemplatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/power-outlet-templates/][%d] dcimPowerOutletTemplatesBulkDeleteNoContent ", 204)
 }

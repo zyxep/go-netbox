@@ -88,6 +88,11 @@ func (o *UsersPermissionsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the users permissions create created response
+func (o *UsersPermissionsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *UsersPermissionsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /users/permissions/][%d] usersPermissionsCreateCreated  %+v", 201, o.Payload)
 }

@@ -84,6 +84,11 @@ func (o *ExtrasTagsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras tags bulk delete no content response
+func (o *ExtrasTagsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasTagsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/tags/][%d] extrasTagsBulkDeleteNoContent ", 204)
 }

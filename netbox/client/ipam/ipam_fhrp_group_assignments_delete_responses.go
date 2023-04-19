@@ -84,6 +84,11 @@ func (o *IpamFhrpGroupAssignmentsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam fhrp group assignments delete no content response
+func (o *IpamFhrpGroupAssignmentsDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamFhrpGroupAssignmentsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/fhrp-group-assignments/{id}/][%d] ipamFhrpGroupAssignmentsDeleteNoContent ", 204)
 }

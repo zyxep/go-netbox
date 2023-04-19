@@ -88,6 +88,11 @@ func (o *IpamFhrpGroupsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the ipam fhrp groups create created response
+func (o *IpamFhrpGroupsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *IpamFhrpGroupsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/fhrp-groups/][%d] ipamFhrpGroupsCreateCreated  %+v", 201, o.Payload)
 }

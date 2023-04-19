@@ -88,6 +88,11 @@ func (o *DcimDevicesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the dcim devices create created response
+func (o *DcimDevicesCreateCreated) Code() int {
+	return 201
+}
+
 func (o *DcimDevicesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/devices/][%d] dcimDevicesCreateCreated  %+v", 201, o.Payload)
 }

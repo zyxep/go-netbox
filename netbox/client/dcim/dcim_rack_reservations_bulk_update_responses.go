@@ -88,6 +88,11 @@ func (o *DcimRackReservationsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the dcim rack reservations bulk update o k response
+func (o *DcimRackReservationsBulkUpdateOK) Code() int {
+	return 200
+}
+
 func (o *DcimRackReservationsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /dcim/rack-reservations/][%d] dcimRackReservationsBulkUpdateOK  %+v", 200, o.Payload)
 }

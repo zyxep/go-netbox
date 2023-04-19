@@ -84,6 +84,11 @@ func (o *IpamIPAddressesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the ipam Ip addresses bulk delete no content response
+func (o *IpamIPAddressesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *IpamIPAddressesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/ip-addresses/][%d] ipamIpAddressesBulkDeleteNoContent ", 204)
 }

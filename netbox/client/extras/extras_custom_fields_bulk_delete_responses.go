@@ -84,6 +84,11 @@ func (o *ExtrasCustomFieldsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras custom fields bulk delete no content response
+func (o *ExtrasCustomFieldsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasCustomFieldsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/custom-fields/][%d] extrasCustomFieldsBulkDeleteNoContent ", 204)
 }

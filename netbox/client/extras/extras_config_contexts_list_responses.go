@@ -93,6 +93,11 @@ func (o *ExtrasConfigContextsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
+// Code gets the status code for the extras config contexts list o k response
+func (o *ExtrasConfigContextsListOK) Code() int {
+	return 200
+}
+
 func (o *ExtrasConfigContextsListOK) Error() string {
 	return fmt.Sprintf("[GET /extras/config-contexts/][%d] extrasConfigContextsListOK  %+v", 200, o.Payload)
 }

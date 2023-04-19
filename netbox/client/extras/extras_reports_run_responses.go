@@ -84,6 +84,11 @@ func (o *ExtrasReportsRunCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the extras reports run created response
+func (o *ExtrasReportsRunCreated) Code() int {
+	return 201
+}
+
 func (o *ExtrasReportsRunCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/reports/{id}/run/][%d] extrasReportsRunCreated ", 201)
 }

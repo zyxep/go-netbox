@@ -84,6 +84,11 @@ func (o *ExtrasImageAttachmentsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the extras image attachments bulk delete no content response
+func (o *ExtrasImageAttachmentsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *ExtrasImageAttachmentsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/image-attachments/][%d] extrasImageAttachmentsBulkDeleteNoContent ", 204)
 }

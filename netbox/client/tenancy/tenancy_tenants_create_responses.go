@@ -88,6 +88,11 @@ func (o *TenancyTenantsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
+// Code gets the status code for the tenancy tenants create created response
+func (o *TenancyTenantsCreateCreated) Code() int {
+	return 201
+}
+
 func (o *TenancyTenantsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /tenancy/tenants/][%d] tenancyTenantsCreateCreated  %+v", 201, o.Payload)
 }

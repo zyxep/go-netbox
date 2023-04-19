@@ -84,6 +84,11 @@ func (o *UsersGroupsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
+// Code gets the status code for the users groups bulk delete no content response
+func (o *UsersGroupsBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *UsersGroupsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /users/groups/][%d] usersGroupsBulkDeleteNoContent ", 204)
 }

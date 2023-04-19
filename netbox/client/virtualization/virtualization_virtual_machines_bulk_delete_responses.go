@@ -84,6 +84,11 @@ func (o *VirtualizationVirtualMachinesBulkDeleteNoContent) IsCode(code int) bool
 	return code == 204
 }
 
+// Code gets the status code for the virtualization virtual machines bulk delete no content response
+func (o *VirtualizationVirtualMachinesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *VirtualizationVirtualMachinesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /virtualization/virtual-machines/][%d] virtualizationVirtualMachinesBulkDeleteNoContent ", 204)
 }

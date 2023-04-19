@@ -84,6 +84,11 @@ func (o *DcimConsoleServerPortTemplatesBulkDeleteNoContent) IsCode(code int) boo
 	return code == 204
 }
 
+// Code gets the status code for the dcim console server port templates bulk delete no content response
+func (o *DcimConsoleServerPortTemplatesBulkDeleteNoContent) Code() int {
+	return 204
+}
+
 func (o *DcimConsoleServerPortTemplatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/console-server-port-templates/][%d] dcimConsoleServerPortTemplatesBulkDeleteNoContent ", 204)
 }

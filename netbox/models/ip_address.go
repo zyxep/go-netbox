@@ -47,12 +47,15 @@ type IPAddress struct {
 	AssignedObject interface{} `json:"assigned_object,omitempty"`
 
 	// Assigned object id
-	// Maximum: 2.147483647e+09
+	// Maximum: 9.223372036854776e+18
 	// Minimum: 0
 	AssignedObjectID *int64 `json:"assigned_object_id,omitempty"`
 
 	// Assigned object type
 	AssignedObjectType *string `json:"assigned_object_type,omitempty"`
+
+	// Comments
+	Comments string `json:"comments,omitempty"`
 
 	// Created
 	// Read Only: true
@@ -205,7 +208,7 @@ func (m *IPAddress) validateAssignedObjectID(formats strfmt.Registry) error {
 		return err
 	}
 
-	if err := validate.MaximumInt("assigned_object_id", "body", *m.AssignedObjectID, 2.147483647e+09, false); err != nil {
+	if err := validate.MaximumInt("assigned_object_id", "body", *m.AssignedObjectID, 9.223372036854776e+18, false); err != nil {
 		return err
 	}
 
@@ -1032,12 +1035,12 @@ type IPAddressStatus struct {
 
 	// label
 	// Required: true
-	// Enum: [Active Reserved Deprecated DHCP SLAAC]
+	// Enum: [Active Reserved Deprecated DHCP SLAAC DHCP Reserved]
 	Label *string `json:"label"`
 
 	// value
 	// Required: true
-	// Enum: [active reserved deprecated dhcp slaac]
+	// Enum: [active reserved deprecated dhcp slaac DHCP_Reserved]
 	Value *string `json:"value"`
 }
 
@@ -1063,7 +1066,7 @@ var ipAddressStatusTypeLabelPropEnum []interface{}
 
 func init() {
 	var res []string
-	if err := json.Unmarshal([]byte(`["Active","Reserved","Deprecated","DHCP","SLAAC"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["Active","Reserved","Deprecated","DHCP","SLAAC","DHCP Reserved"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
@@ -1087,6 +1090,9 @@ const (
 
 	// IPAddressStatusLabelSLAAC captures enum value "SLAAC"
 	IPAddressStatusLabelSLAAC string = "SLAAC"
+
+	// IPAddressStatusLabelDHCPReserved captures enum value "DHCP Reserved"
+	IPAddressStatusLabelDHCPReserved string = "DHCP Reserved"
 )
 
 // prop value enum
@@ -1115,7 +1121,7 @@ var ipAddressStatusTypeValuePropEnum []interface{}
 
 func init() {
 	var res []string
-	if err := json.Unmarshal([]byte(`["active","reserved","deprecated","dhcp","slaac"]`), &res); err != nil {
+	if err := json.Unmarshal([]byte(`["active","reserved","deprecated","dhcp","slaac","DHCP_Reserved"]`), &res); err != nil {
 		panic(err)
 	}
 	for _, v := range res {
@@ -1139,6 +1145,9 @@ const (
 
 	// IPAddressStatusValueSlaac captures enum value "slaac"
 	IPAddressStatusValueSlaac string = "slaac"
+
+	// IPAddressStatusValueDHCPReserved captures enum value "DHCP_Reserved"
+	IPAddressStatusValueDHCPReserved string = "DHCP_Reserved"
 )
 
 // prop value enum

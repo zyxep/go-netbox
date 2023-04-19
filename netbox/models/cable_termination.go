@@ -58,7 +58,7 @@ type CableTermination struct {
 
 	// Termination id
 	// Required: true
-	// Maximum: 2.147483647e+09
+	// Maximum: 9.223372036854776e+18
 	// Minimum: 0
 	TerminationID *int64 `json:"termination_id"`
 
@@ -164,7 +164,7 @@ func (m *CableTermination) validateTerminationID(formats strfmt.Registry) error 
 		return err
 	}
 
-	if err := validate.MaximumInt("termination_id", "body", *m.TerminationID, 2.147483647e+09, false); err != nil {
+	if err := validate.MaximumInt("termination_id", "body", *m.TerminationID, 9.223372036854776e+18, false); err != nil {
 		return err
 	}
 
