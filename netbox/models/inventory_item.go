@@ -50,7 +50,7 @@ type InventoryItem struct {
 	Component interface{} `json:"component,omitempty"`
 
 	// Component id
-	// Maximum: 9.223372036854776e+18
+	// Maximum: 2.147483647e+09
 	// Minimum: 0
 	ComponentID *int64 `json:"component_id,omitempty"`
 
@@ -218,7 +218,7 @@ func (m *InventoryItem) validateComponentID(formats strfmt.Registry) error {
 		return err
 	}
 
-	if err := validate.MaximumInt("component_id", "body", *m.ComponentID, 9.223372036854776e+18, false); err != nil {
+	if err := validate.MaximumInt("component_id", "body", *m.ComponentID, 2.147483647e+09, false); err != nil {
 		return err
 	}
 

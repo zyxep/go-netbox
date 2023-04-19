@@ -67,7 +67,7 @@ type ContactAssignment struct {
 
 	// Object id
 	// Required: true
-	// Maximum: 9.223372036854776e+18
+	// Maximum: 2.147483647e+09
 	// Minimum: 0
 	ObjectID *int64 `json:"object_id"`
 
@@ -188,7 +188,7 @@ func (m *ContactAssignment) validateObjectID(formats strfmt.Registry) error {
 		return err
 	}
 
-	if err := validate.MaximumInt("object_id", "body", *m.ObjectID, 9.223372036854776e+18, false); err != nil {
+	if err := validate.MaximumInt("object_id", "body", *m.ObjectID, 2.147483647e+09, false); err != nil {
 		return err
 	}
 
