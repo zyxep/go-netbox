@@ -1,6 +1,6 @@
-module github.com/smutel/go-netbox/v3
+module github.com/zyxep/go-netbox/v3
 
-go 1.16
+go 1.20
 
 require (
 	github.com/go-openapi/errors v0.20.3
