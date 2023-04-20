@@ -88,11 +88,6 @@ func (o *TenancyContactGroupsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the tenancy contact groups bulk partial update o k response
-func (o *TenancyContactGroupsBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *TenancyContactGroupsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /tenancy/contact-groups/][%d] tenancyContactGroupsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

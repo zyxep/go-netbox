@@ -93,11 +93,6 @@ func (o *UsersGroupsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the users groups list o k response
-func (o *UsersGroupsListOK) Code() int {
-	return 200
-}
-
 func (o *UsersGroupsListOK) Error() string {
 	return fmt.Sprintf("[GET /users/groups/][%d] usersGroupsListOK  %+v", 200, o.Payload)
 }

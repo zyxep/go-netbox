@@ -84,11 +84,6 @@ func (o *UsersUsersBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the users users bulk delete no content response
-func (o *UsersUsersBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *UsersUsersBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /users/users/][%d] usersUsersBulkDeleteNoContent ", 204)
 }

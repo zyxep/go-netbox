@@ -84,11 +84,6 @@ func (o *DcimInventoryItemTemplatesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim inventory item templates delete no content response
-func (o *DcimInventoryItemTemplatesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimInventoryItemTemplatesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/inventory-item-templates/{id}/][%d] dcimInventoryItemTemplatesDeleteNoContent ", 204)
 }

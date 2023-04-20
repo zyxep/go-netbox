@@ -88,11 +88,6 @@ func (o *DcimDevicesBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim devices bulk partial update o k response
-func (o *DcimDevicesBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimDevicesBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /dcim/devices/][%d] dcimDevicesBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

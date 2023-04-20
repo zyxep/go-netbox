@@ -88,11 +88,6 @@ func (o *DcimRearPortTemplatesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim rear port templates create created response
-func (o *DcimRearPortTemplatesCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimRearPortTemplatesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/rear-port-templates/][%d] dcimRearPortTemplatesCreateCreated  %+v", 201, o.Payload)
 }

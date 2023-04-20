@@ -93,11 +93,6 @@ func (o *ExtrasSavedFiltersListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras saved filters list o k response
-func (o *ExtrasSavedFiltersListOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasSavedFiltersListOK) Error() string {
 	return fmt.Sprintf("[GET /extras/saved-filters/][%d] extrasSavedFiltersListOK  %+v", 200, o.Payload)
 }

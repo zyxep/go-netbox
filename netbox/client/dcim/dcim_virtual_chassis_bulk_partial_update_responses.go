@@ -88,11 +88,6 @@ func (o *DcimVirtualChassisBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim virtual chassis bulk partial update o k response
-func (o *DcimVirtualChassisBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimVirtualChassisBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /dcim/virtual-chassis/][%d] dcimVirtualChassisBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

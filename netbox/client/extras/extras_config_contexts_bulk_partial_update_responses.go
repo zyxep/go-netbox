@@ -88,11 +88,6 @@ func (o *ExtrasConfigContextsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras config contexts bulk partial update o k response
-func (o *ExtrasConfigContextsBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasConfigContextsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/config-contexts/][%d] extrasConfigContextsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

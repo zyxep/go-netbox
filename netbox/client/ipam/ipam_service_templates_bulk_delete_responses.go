@@ -84,11 +84,6 @@ func (o *IpamServiceTemplatesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam service templates bulk delete no content response
-func (o *IpamServiceTemplatesBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamServiceTemplatesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/service-templates/][%d] ipamServiceTemplatesBulkDeleteNoContent ", 204)
 }

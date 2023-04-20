@@ -84,11 +84,6 @@ func (o *WirelessWirelessLansDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the wireless wireless lans delete no content response
-func (o *WirelessWirelessLansDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *WirelessWirelessLansDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /wireless/wireless-lans/{id}/][%d] wirelessWirelessLansDeleteNoContent ", 204)
 }

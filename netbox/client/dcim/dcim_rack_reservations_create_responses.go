@@ -88,11 +88,6 @@ func (o *DcimRackReservationsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim rack reservations create created response
-func (o *DcimRackReservationsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimRackReservationsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/rack-reservations/][%d] dcimRackReservationsCreateCreated  %+v", 201, o.Payload)
 }

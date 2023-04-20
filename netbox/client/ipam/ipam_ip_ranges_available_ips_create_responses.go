@@ -88,11 +88,6 @@ func (o *IpamIPRangesAvailableIpsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the ipam Ip ranges available ips create created response
-func (o *IpamIPRangesAvailableIpsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *IpamIPRangesAvailableIpsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/ip-ranges/{id}/available-ips/][%d] ipamIpRangesAvailableIpsCreateCreated  %+v", 201, o.Payload)
 }

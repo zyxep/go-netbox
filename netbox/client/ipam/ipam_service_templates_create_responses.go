@@ -88,11 +88,6 @@ func (o *IpamServiceTemplatesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the ipam service templates create created response
-func (o *IpamServiceTemplatesCreateCreated) Code() int {
-	return 201
-}
-
 func (o *IpamServiceTemplatesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /ipam/service-templates/][%d] ipamServiceTemplatesCreateCreated  %+v", 201, o.Payload)
 }

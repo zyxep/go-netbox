@@ -84,11 +84,6 @@ func (o *ExtrasSavedFiltersBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the extras saved filters bulk delete no content response
-func (o *ExtrasSavedFiltersBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *ExtrasSavedFiltersBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/saved-filters/][%d] extrasSavedFiltersBulkDeleteNoContent ", 204)
 }

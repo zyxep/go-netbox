@@ -88,11 +88,6 @@ func (o *ExtrasExportTemplatesPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras export templates partial update o k response
-func (o *ExtrasExportTemplatesPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasExportTemplatesPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/export-templates/{id}/][%d] extrasExportTemplatesPartialUpdateOK  %+v", 200, o.Payload)
 }

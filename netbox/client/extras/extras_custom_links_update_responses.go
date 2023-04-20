@@ -88,11 +88,6 @@ func (o *ExtrasCustomLinksUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras custom links update o k response
-func (o *ExtrasCustomLinksUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasCustomLinksUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/custom-links/{id}/][%d] extrasCustomLinksUpdateOK  %+v", 200, o.Payload)
 }

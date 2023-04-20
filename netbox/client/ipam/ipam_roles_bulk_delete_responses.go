@@ -84,11 +84,6 @@ func (o *IpamRolesBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam roles bulk delete no content response
-func (o *IpamRolesBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamRolesBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/roles/][%d] ipamRolesBulkDeleteNoContent ", 204)
 }

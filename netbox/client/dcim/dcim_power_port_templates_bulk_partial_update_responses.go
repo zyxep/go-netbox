@@ -88,11 +88,6 @@ func (o *DcimPowerPortTemplatesBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim power port templates bulk partial update o k response
-func (o *DcimPowerPortTemplatesBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimPowerPortTemplatesBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /dcim/power-port-templates/][%d] dcimPowerPortTemplatesBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

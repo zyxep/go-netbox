@@ -84,11 +84,6 @@ func (o *ExtrasExportTemplatesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the extras export templates delete no content response
-func (o *ExtrasExportTemplatesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *ExtrasExportTemplatesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/export-templates/{id}/][%d] extrasExportTemplatesDeleteNoContent ", 204)
 }

@@ -88,11 +88,6 @@ func (o *DcimPowerOutletTemplatesUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim power outlet templates update o k response
-func (o *DcimPowerOutletTemplatesUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimPowerOutletTemplatesUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /dcim/power-outlet-templates/{id}/][%d] dcimPowerOutletTemplatesUpdateOK  %+v", 200, o.Payload)
 }

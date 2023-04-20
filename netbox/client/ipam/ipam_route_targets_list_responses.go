@@ -93,11 +93,6 @@ func (o *IpamRouteTargetsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam route targets list o k response
-func (o *IpamRouteTargetsListOK) Code() int {
-	return 200
-}
-
 func (o *IpamRouteTargetsListOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/route-targets/][%d] ipamRouteTargetsListOK  %+v", 200, o.Payload)
 }

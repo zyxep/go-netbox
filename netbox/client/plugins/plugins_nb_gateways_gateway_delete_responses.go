@@ -84,11 +84,6 @@ func (o *PluginsNbGatewaysGatewayDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the plugins nb gateways gateway delete no content response
-func (o *PluginsNbGatewaysGatewayDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *PluginsNbGatewaysGatewayDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /plugins/nb-gateways/gateway/{id}/][%d] pluginsNbGatewaysGatewayDeleteNoContent ", 204)
 }

@@ -88,11 +88,6 @@ func (o *DcimVirtualDeviceContextsPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim virtual device contexts partial update o k response
-func (o *DcimVirtualDeviceContextsPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimVirtualDeviceContextsPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /dcim/virtual-device-contexts/{id}/][%d] dcimVirtualDeviceContextsPartialUpdateOK  %+v", 200, o.Payload)
 }

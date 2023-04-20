@@ -84,11 +84,6 @@ func (o *IpamRirsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam rirs delete no content response
-func (o *IpamRirsDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamRirsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/rirs/{id}/][%d] ipamRirsDeleteNoContent ", 204)
 }

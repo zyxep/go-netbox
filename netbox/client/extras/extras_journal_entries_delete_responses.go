@@ -84,11 +84,6 @@ func (o *ExtrasJournalEntriesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the extras journal entries delete no content response
-func (o *ExtrasJournalEntriesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *ExtrasJournalEntriesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /extras/journal-entries/{id}/][%d] extrasJournalEntriesDeleteNoContent ", 204)
 }

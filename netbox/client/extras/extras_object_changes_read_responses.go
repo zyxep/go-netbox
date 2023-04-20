@@ -88,11 +88,6 @@ func (o *ExtrasObjectChangesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras object changes read o k response
-func (o *ExtrasObjectChangesReadOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasObjectChangesReadOK) Error() string {
 	return fmt.Sprintf("[GET /extras/object-changes/{id}/][%d] extrasObjectChangesReadOK  %+v", 200, o.Payload)
 }

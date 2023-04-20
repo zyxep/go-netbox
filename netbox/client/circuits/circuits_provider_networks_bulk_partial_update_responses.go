@@ -88,11 +88,6 @@ func (o *CircuitsProviderNetworksBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the circuits provider networks bulk partial update o k response
-func (o *CircuitsProviderNetworksBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *CircuitsProviderNetworksBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /circuits/provider-networks/][%d] circuitsProviderNetworksBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

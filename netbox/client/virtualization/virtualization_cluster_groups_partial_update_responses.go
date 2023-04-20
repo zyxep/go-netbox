@@ -88,11 +88,6 @@ func (o *VirtualizationClusterGroupsPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the virtualization cluster groups partial update o k response
-func (o *VirtualizationClusterGroupsPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *VirtualizationClusterGroupsPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /virtualization/cluster-groups/{id}/][%d] virtualizationClusterGroupsPartialUpdateOK  %+v", 200, o.Payload)
 }

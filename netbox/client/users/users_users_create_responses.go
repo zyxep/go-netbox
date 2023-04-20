@@ -88,11 +88,6 @@ func (o *UsersUsersCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the users users create created response
-func (o *UsersUsersCreateCreated) Code() int {
-	return 201
-}
-
 func (o *UsersUsersCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /users/users/][%d] usersUsersCreateCreated  %+v", 201, o.Payload)
 }

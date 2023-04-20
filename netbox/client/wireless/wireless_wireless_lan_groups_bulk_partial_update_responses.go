@@ -88,11 +88,6 @@ func (o *WirelessWirelessLanGroupsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the wireless wireless lan groups bulk partial update o k response
-func (o *WirelessWirelessLanGroupsBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *WirelessWirelessLanGroupsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /wireless/wireless-lan-groups/][%d] wirelessWirelessLanGroupsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

@@ -84,11 +84,6 @@ func (o *TenancyContactGroupsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the tenancy contact groups delete no content response
-func (o *TenancyContactGroupsDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *TenancyContactGroupsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /tenancy/contact-groups/{id}/][%d] tenancyContactGroupsDeleteNoContent ", 204)
 }

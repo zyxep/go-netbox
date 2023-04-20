@@ -84,11 +84,6 @@ func (o *DcimFrontPortTemplatesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim front port templates delete no content response
-func (o *DcimFrontPortTemplatesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimFrontPortTemplatesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/front-port-templates/{id}/][%d] dcimFrontPortTemplatesDeleteNoContent ", 204)
 }

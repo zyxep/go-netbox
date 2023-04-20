@@ -93,11 +93,6 @@ func (o *DcimModuleBayTemplatesListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim module bay templates list o k response
-func (o *DcimModuleBayTemplatesListOK) Code() int {
-	return 200
-}
-
 func (o *DcimModuleBayTemplatesListOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/module-bay-templates/][%d] dcimModuleBayTemplatesListOK  %+v", 200, o.Payload)
 }

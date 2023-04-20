@@ -84,11 +84,6 @@ func (o *TenancyTenantsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the tenancy tenants delete no content response
-func (o *TenancyTenantsDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *TenancyTenantsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /tenancy/tenants/{id}/][%d] tenancyTenantsDeleteNoContent ", 204)
 }

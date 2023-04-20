@@ -88,11 +88,6 @@ func (o *IpamVrfsPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam vrfs partial update o k response
-func (o *IpamVrfsPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamVrfsPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /ipam/vrfs/{id}/][%d] ipamVrfsPartialUpdateOK  %+v", 200, o.Payload)
 }

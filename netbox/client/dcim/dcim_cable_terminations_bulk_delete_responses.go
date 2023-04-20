@@ -84,11 +84,6 @@ func (o *DcimCableTerminationsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim cable terminations bulk delete no content response
-func (o *DcimCableTerminationsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimCableTerminationsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/cable-terminations/][%d] dcimCableTerminationsBulkDeleteNoContent ", 204)
 }

@@ -84,11 +84,6 @@ func (o *DcimModuleBaysDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim module bays delete no content response
-func (o *DcimModuleBaysDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimModuleBaysDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/module-bays/{id}/][%d] dcimModuleBaysDeleteNoContent ", 204)
 }

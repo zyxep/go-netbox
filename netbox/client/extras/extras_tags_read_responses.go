@@ -88,11 +88,6 @@ func (o *ExtrasTagsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras tags read o k response
-func (o *ExtrasTagsReadOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasTagsReadOK) Error() string {
 	return fmt.Sprintf("[GET /extras/tags/{id}/][%d] extrasTagsReadOK  %+v", 200, o.Payload)
 }

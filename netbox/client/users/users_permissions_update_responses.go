@@ -88,11 +88,6 @@ func (o *UsersPermissionsUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the users permissions update o k response
-func (o *UsersPermissionsUpdateOK) Code() int {
-	return 200
-}
-
 func (o *UsersPermissionsUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /users/permissions/{id}/][%d] usersPermissionsUpdateOK  %+v", 200, o.Payload)
 }

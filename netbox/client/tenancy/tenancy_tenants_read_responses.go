@@ -88,11 +88,6 @@ func (o *TenancyTenantsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the tenancy tenants read o k response
-func (o *TenancyTenantsReadOK) Code() int {
-	return 200
-}
-
 func (o *TenancyTenantsReadOK) Error() string {
 	return fmt.Sprintf("[GET /tenancy/tenants/{id}/][%d] tenancyTenantsReadOK  %+v", 200, o.Payload)
 }

@@ -88,11 +88,6 @@ func (o *PluginsNbGatewaysGatewayBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the plugins nb gateways gateway bulk update o k response
-func (o *PluginsNbGatewaysGatewayBulkUpdateOK) Code() int {
-	return 200
-}
-
 func (o *PluginsNbGatewaysGatewayBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /plugins/nb-gateways/gateway/][%d] pluginsNbGatewaysGatewayBulkUpdateOK  %+v", 200, o.Payload)
 }

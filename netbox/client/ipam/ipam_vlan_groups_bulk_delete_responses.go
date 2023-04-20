@@ -84,11 +84,6 @@ func (o *IpamVlanGroupsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam vlan groups bulk delete no content response
-func (o *IpamVlanGroupsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamVlanGroupsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/vlan-groups/][%d] ipamVlanGroupsBulkDeleteNoContent ", 204)
 }

@@ -88,11 +88,6 @@ func (o *IpamFhrpGroupsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam fhrp groups read o k response
-func (o *IpamFhrpGroupsReadOK) Code() int {
-	return 200
-}
-
 func (o *IpamFhrpGroupsReadOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/fhrp-groups/{id}/][%d] ipamFhrpGroupsReadOK  %+v", 200, o.Payload)
 }

@@ -88,11 +88,6 @@ func (o *ExtrasJournalEntriesReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras journal entries read o k response
-func (o *ExtrasJournalEntriesReadOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasJournalEntriesReadOK) Error() string {
 	return fmt.Sprintf("[GET /extras/journal-entries/{id}/][%d] extrasJournalEntriesReadOK  %+v", 200, o.Payload)
 }

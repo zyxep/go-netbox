@@ -88,11 +88,6 @@ func (o *ExtrasSavedFiltersCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the extras saved filters create created response
-func (o *ExtrasSavedFiltersCreateCreated) Code() int {
-	return 201
-}
-
 func (o *ExtrasSavedFiltersCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/saved-filters/][%d] extrasSavedFiltersCreateCreated  %+v", 201, o.Payload)
 }

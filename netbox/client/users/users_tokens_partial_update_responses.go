@@ -88,11 +88,6 @@ func (o *UsersTokensPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the users tokens partial update o k response
-func (o *UsersTokensPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *UsersTokensPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /users/tokens/{id}/][%d] usersTokensPartialUpdateOK  %+v", 200, o.Payload)
 }

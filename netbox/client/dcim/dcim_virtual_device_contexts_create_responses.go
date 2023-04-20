@@ -88,11 +88,6 @@ func (o *DcimVirtualDeviceContextsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim virtual device contexts create created response
-func (o *DcimVirtualDeviceContextsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimVirtualDeviceContextsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/virtual-device-contexts/][%d] dcimVirtualDeviceContextsCreateCreated  %+v", 201, o.Payload)
 }

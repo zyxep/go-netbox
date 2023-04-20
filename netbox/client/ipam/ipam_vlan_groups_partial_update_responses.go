@@ -88,11 +88,6 @@ func (o *IpamVlanGroupsPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam vlan groups partial update o k response
-func (o *IpamVlanGroupsPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamVlanGroupsPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /ipam/vlan-groups/{id}/][%d] ipamVlanGroupsPartialUpdateOK  %+v", 200, o.Payload)
 }

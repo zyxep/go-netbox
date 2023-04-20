@@ -88,11 +88,6 @@ func (o *IpamFhrpGroupAssignmentsBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam fhrp group assignments bulk partial update o k response
-func (o *IpamFhrpGroupAssignmentsBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamFhrpGroupAssignmentsBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /ipam/fhrp-group-assignments/][%d] ipamFhrpGroupAssignmentsBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

@@ -88,11 +88,6 @@ func (o *DcimVirtualChassisCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim virtual chassis create created response
-func (o *DcimVirtualChassisCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimVirtualChassisCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/virtual-chassis/][%d] dcimVirtualChassisCreateCreated  %+v", 201, o.Payload)
 }

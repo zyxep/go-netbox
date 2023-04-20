@@ -84,11 +84,6 @@ func (o *IpamL2vpnsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam l2vpns bulk delete no content response
-func (o *IpamL2vpnsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamL2vpnsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/l2vpns/][%d] ipamL2vpnsBulkDeleteNoContent ", 204)
 }

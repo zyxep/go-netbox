@@ -84,11 +84,6 @@ func (o *TenancyContactsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the tenancy contacts bulk delete no content response
-func (o *TenancyContactsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *TenancyContactsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /tenancy/contacts/][%d] tenancyContactsBulkDeleteNoContent ", 204)
 }

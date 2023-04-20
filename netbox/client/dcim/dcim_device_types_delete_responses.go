@@ -84,11 +84,6 @@ func (o *DcimDeviceTypesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim device types delete no content response
-func (o *DcimDeviceTypesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimDeviceTypesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/device-types/{id}/][%d] dcimDeviceTypesDeleteNoContent ", 204)
 }

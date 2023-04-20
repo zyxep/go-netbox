@@ -84,11 +84,6 @@ func (o *DcimPowerFeedsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim power feeds delete no content response
-func (o *DcimPowerFeedsDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimPowerFeedsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/power-feeds/{id}/][%d] dcimPowerFeedsDeleteNoContent ", 204)
 }

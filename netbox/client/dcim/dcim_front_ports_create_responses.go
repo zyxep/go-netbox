@@ -88,11 +88,6 @@ func (o *DcimFrontPortsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim front ports create created response
-func (o *DcimFrontPortsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimFrontPortsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/front-ports/][%d] dcimFrontPortsCreateCreated  %+v", 201, o.Payload)
 }

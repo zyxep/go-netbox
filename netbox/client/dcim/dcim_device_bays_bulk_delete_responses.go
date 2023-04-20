@@ -84,11 +84,6 @@ func (o *DcimDeviceBaysBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim device bays bulk delete no content response
-func (o *DcimDeviceBaysBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimDeviceBaysBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/device-bays/][%d] dcimDeviceBaysBulkDeleteNoContent ", 204)
 }

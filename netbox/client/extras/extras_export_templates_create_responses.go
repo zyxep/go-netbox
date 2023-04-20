@@ -88,11 +88,6 @@ func (o *ExtrasExportTemplatesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the extras export templates create created response
-func (o *ExtrasExportTemplatesCreateCreated) Code() int {
-	return 201
-}
-
 func (o *ExtrasExportTemplatesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/export-templates/][%d] extrasExportTemplatesCreateCreated  %+v", 201, o.Payload)
 }

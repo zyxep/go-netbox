@@ -84,11 +84,6 @@ func (o *DcimVirtualDeviceContextsDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim virtual device contexts delete no content response
-func (o *DcimVirtualDeviceContextsDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimVirtualDeviceContextsDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/virtual-device-contexts/{id}/][%d] dcimVirtualDeviceContextsDeleteNoContent ", 204)
 }

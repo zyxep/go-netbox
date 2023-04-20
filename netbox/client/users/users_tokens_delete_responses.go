@@ -84,11 +84,6 @@ func (o *UsersTokensDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the users tokens delete no content response
-func (o *UsersTokensDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *UsersTokensDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /users/tokens/{id}/][%d] usersTokensDeleteNoContent ", 204)
 }

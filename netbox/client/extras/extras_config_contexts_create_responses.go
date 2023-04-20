@@ -88,11 +88,6 @@ func (o *ExtrasConfigContextsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the extras config contexts create created response
-func (o *ExtrasConfigContextsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *ExtrasConfigContextsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/config-contexts/][%d] extrasConfigContextsCreateCreated  %+v", 201, o.Payload)
 }

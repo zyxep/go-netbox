@@ -88,11 +88,6 @@ func (o *DcimConsoleServerPortsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim console server ports read o k response
-func (o *DcimConsoleServerPortsReadOK) Code() int {
-	return 200
-}
-
 func (o *DcimConsoleServerPortsReadOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/console-server-ports/{id}/][%d] dcimConsoleServerPortsReadOK  %+v", 200, o.Payload)
 }

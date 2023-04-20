@@ -88,11 +88,6 @@ func (o *CircuitsCircuitTerminationsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the circuits circuit terminations bulk update o k response
-func (o *CircuitsCircuitTerminationsBulkUpdateOK) Code() int {
-	return 200
-}
-
 func (o *CircuitsCircuitTerminationsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /circuits/circuit-terminations/][%d] circuitsCircuitTerminationsBulkUpdateOK  %+v", 200, o.Payload)
 }

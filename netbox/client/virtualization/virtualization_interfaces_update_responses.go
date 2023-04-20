@@ -88,11 +88,6 @@ func (o *VirtualizationInterfacesUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the virtualization interfaces update o k response
-func (o *VirtualizationInterfacesUpdateOK) Code() int {
-	return 200
-}
-
 func (o *VirtualizationInterfacesUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /virtualization/interfaces/{id}/][%d] virtualizationInterfacesUpdateOK  %+v", 200, o.Payload)
 }

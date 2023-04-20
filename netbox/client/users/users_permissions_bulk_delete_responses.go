@@ -84,11 +84,6 @@ func (o *UsersPermissionsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the users permissions bulk delete no content response
-func (o *UsersPermissionsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *UsersPermissionsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /users/permissions/][%d] usersPermissionsBulkDeleteNoContent ", 204)
 }

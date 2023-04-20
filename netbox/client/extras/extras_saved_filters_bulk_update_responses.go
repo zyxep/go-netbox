@@ -88,11 +88,6 @@ func (o *ExtrasSavedFiltersBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras saved filters bulk update o k response
-func (o *ExtrasSavedFiltersBulkUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasSavedFiltersBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /extras/saved-filters/][%d] extrasSavedFiltersBulkUpdateOK  %+v", 200, o.Payload)
 }

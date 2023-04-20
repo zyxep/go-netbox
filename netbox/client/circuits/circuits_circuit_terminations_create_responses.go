@@ -88,11 +88,6 @@ func (o *CircuitsCircuitTerminationsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the circuits circuit terminations create created response
-func (o *CircuitsCircuitTerminationsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *CircuitsCircuitTerminationsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /circuits/circuit-terminations/][%d] circuitsCircuitTerminationsCreateCreated  %+v", 201, o.Payload)
 }

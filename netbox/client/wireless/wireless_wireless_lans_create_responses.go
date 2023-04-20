@@ -88,11 +88,6 @@ func (o *WirelessWirelessLansCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the wireless wireless lans create created response
-func (o *WirelessWirelessLansCreateCreated) Code() int {
-	return 201
-}
-
 func (o *WirelessWirelessLansCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /wireless/wireless-lans/][%d] wirelessWirelessLansCreateCreated  %+v", 201, o.Payload)
 }

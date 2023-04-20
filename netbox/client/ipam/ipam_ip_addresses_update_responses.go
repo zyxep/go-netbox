@@ -88,11 +88,6 @@ func (o *IpamIPAddressesUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam Ip addresses update o k response
-func (o *IpamIPAddressesUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamIPAddressesUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /ipam/ip-addresses/{id}/][%d] ipamIpAddressesUpdateOK  %+v", 200, o.Payload)
 }

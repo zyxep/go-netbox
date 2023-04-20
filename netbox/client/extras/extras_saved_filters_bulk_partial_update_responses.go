@@ -88,11 +88,6 @@ func (o *ExtrasSavedFiltersBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras saved filters bulk partial update o k response
-func (o *ExtrasSavedFiltersBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasSavedFiltersBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/saved-filters/][%d] extrasSavedFiltersBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

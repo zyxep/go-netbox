@@ -84,11 +84,6 @@ func (o *TenancyTenantGroupsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the tenancy tenant groups bulk delete no content response
-func (o *TenancyTenantGroupsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *TenancyTenantGroupsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /tenancy/tenant-groups/][%d] tenancyTenantGroupsBulkDeleteNoContent ", 204)
 }

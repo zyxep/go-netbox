@@ -88,11 +88,6 @@ func (o *IpamIPRangesBulkPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam Ip ranges bulk partial update o k response
-func (o *IpamIPRangesBulkPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamIPRangesBulkPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /ipam/ip-ranges/][%d] ipamIpRangesBulkPartialUpdateOK  %+v", 200, o.Payload)
 }

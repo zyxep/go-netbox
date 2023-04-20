@@ -88,11 +88,6 @@ func (o *DcimRackRolesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the dcim rack roles create created response
-func (o *DcimRackRolesCreateCreated) Code() int {
-	return 201
-}
-
 func (o *DcimRackRolesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /dcim/rack-roles/][%d] dcimRackRolesCreateCreated  %+v", 201, o.Payload)
 }

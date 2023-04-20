@@ -88,11 +88,6 @@ func (o *DcimRacksReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim racks read o k response
-func (o *DcimRacksReadOK) Code() int {
-	return 200
-}
-
 func (o *DcimRacksReadOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/racks/{id}/][%d] dcimRacksReadOK  %+v", 200, o.Payload)
 }

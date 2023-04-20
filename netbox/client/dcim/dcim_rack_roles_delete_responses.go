@@ -84,11 +84,6 @@ func (o *DcimRackRolesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the dcim rack roles delete no content response
-func (o *DcimRackRolesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *DcimRackRolesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /dcim/rack-roles/{id}/][%d] dcimRackRolesDeleteNoContent ", 204)
 }

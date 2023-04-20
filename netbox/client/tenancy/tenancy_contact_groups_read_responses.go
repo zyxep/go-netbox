@@ -88,11 +88,6 @@ func (o *TenancyContactGroupsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the tenancy contact groups read o k response
-func (o *TenancyContactGroupsReadOK) Code() int {
-	return 200
-}
-
 func (o *TenancyContactGroupsReadOK) Error() string {
 	return fmt.Sprintf("[GET /tenancy/contact-groups/{id}/][%d] tenancyContactGroupsReadOK  %+v", 200, o.Payload)
 }

@@ -88,11 +88,6 @@ func (o *IpamL2vpnsBulkUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam l2vpns bulk update o k response
-func (o *IpamL2vpnsBulkUpdateOK) Code() int {
-	return 200
-}
-
 func (o *IpamL2vpnsBulkUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /ipam/l2vpns/][%d] ipamL2vpnsBulkUpdateOK  %+v", 200, o.Payload)
 }

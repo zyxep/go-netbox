@@ -88,11 +88,6 @@ func (o *PluginsNbGatewaysGatewayCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the plugins nb gateways gateway create created response
-func (o *PluginsNbGatewaysGatewayCreateCreated) Code() int {
-	return 201
-}
-
 func (o *PluginsNbGatewaysGatewayCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /plugins/nb-gateways/gateway/][%d] pluginsNbGatewaysGatewayCreateCreated  %+v", 201, o.Payload)
 }

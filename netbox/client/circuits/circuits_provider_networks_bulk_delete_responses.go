@@ -84,11 +84,6 @@ func (o *CircuitsProviderNetworksBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the circuits provider networks bulk delete no content response
-func (o *CircuitsProviderNetworksBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *CircuitsProviderNetworksBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /circuits/provider-networks/][%d] circuitsProviderNetworksBulkDeleteNoContent ", 204)
 }

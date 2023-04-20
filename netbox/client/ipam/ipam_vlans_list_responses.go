@@ -93,11 +93,6 @@ func (o *IpamVlansListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the ipam vlans list o k response
-func (o *IpamVlansListOK) Code() int {
-	return 200
-}
-
 func (o *IpamVlansListOK) Error() string {
 	return fmt.Sprintf("[GET /ipam/vlans/][%d] ipamVlansListOK  %+v", 200, o.Payload)
 }

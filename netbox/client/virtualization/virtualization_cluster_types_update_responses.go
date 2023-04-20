@@ -88,11 +88,6 @@ func (o *VirtualizationClusterTypesUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the virtualization cluster types update o k response
-func (o *VirtualizationClusterTypesUpdateOK) Code() int {
-	return 200
-}
-
 func (o *VirtualizationClusterTypesUpdateOK) Error() string {
 	return fmt.Sprintf("[PUT /virtualization/cluster-types/{id}/][%d] virtualizationClusterTypesUpdateOK  %+v", 200, o.Payload)
 }

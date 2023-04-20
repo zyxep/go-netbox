@@ -88,11 +88,6 @@ func (o *VirtualizationInterfacesCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the virtualization interfaces create created response
-func (o *VirtualizationInterfacesCreateCreated) Code() int {
-	return 201
-}
-
 func (o *VirtualizationInterfacesCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /virtualization/interfaces/][%d] virtualizationInterfacesCreateCreated  %+v", 201, o.Payload)
 }

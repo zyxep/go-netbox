@@ -84,11 +84,6 @@ func (o *WirelessWirelessLanGroupsBulkDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the wireless wireless lan groups bulk delete no content response
-func (o *WirelessWirelessLanGroupsBulkDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *WirelessWirelessLanGroupsBulkDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /wireless/wireless-lan-groups/][%d] wirelessWirelessLanGroupsBulkDeleteNoContent ", 204)
 }

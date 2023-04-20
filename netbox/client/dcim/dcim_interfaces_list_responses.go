@@ -93,11 +93,6 @@ func (o *DcimInterfacesListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim interfaces list o k response
-func (o *DcimInterfacesListOK) Code() int {
-	return 200
-}
-
 func (o *DcimInterfacesListOK) Error() string {
 	return fmt.Sprintf("[GET /dcim/interfaces/][%d] dcimInterfacesListOK  %+v", 200, o.Payload)
 }

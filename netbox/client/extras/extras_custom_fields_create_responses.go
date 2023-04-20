@@ -88,11 +88,6 @@ func (o *ExtrasCustomFieldsCreateCreated) IsCode(code int) bool {
 	return code == 201
 }
 
-// Code gets the status code for the extras custom fields create created response
-func (o *ExtrasCustomFieldsCreateCreated) Code() int {
-	return 201
-}
-
 func (o *ExtrasCustomFieldsCreateCreated) Error() string {
 	return fmt.Sprintf("[POST /extras/custom-fields/][%d] extrasCustomFieldsCreateCreated  %+v", 201, o.Payload)
 }

@@ -88,11 +88,6 @@ func (o *DcimDeviceRolesPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the dcim device roles partial update o k response
-func (o *DcimDeviceRolesPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *DcimDeviceRolesPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /dcim/device-roles/{id}/][%d] dcimDeviceRolesPartialUpdateOK  %+v", 200, o.Payload)
 }

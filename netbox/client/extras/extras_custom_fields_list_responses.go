@@ -93,11 +93,6 @@ func (o *ExtrasCustomFieldsListOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras custom fields list o k response
-func (o *ExtrasCustomFieldsListOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasCustomFieldsListOK) Error() string {
 	return fmt.Sprintf("[GET /extras/custom-fields/][%d] extrasCustomFieldsListOK  %+v", 200, o.Payload)
 }

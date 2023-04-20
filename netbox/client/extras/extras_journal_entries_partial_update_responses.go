@@ -88,11 +88,6 @@ func (o *ExtrasJournalEntriesPartialUpdateOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the extras journal entries partial update o k response
-func (o *ExtrasJournalEntriesPartialUpdateOK) Code() int {
-	return 200
-}
-
 func (o *ExtrasJournalEntriesPartialUpdateOK) Error() string {
 	return fmt.Sprintf("[PATCH /extras/journal-entries/{id}/][%d] extrasJournalEntriesPartialUpdateOK  %+v", 200, o.Payload)
 }

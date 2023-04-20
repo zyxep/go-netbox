@@ -84,11 +84,6 @@ func (o *IpamIPAddressesDeleteNoContent) IsCode(code int) bool {
 	return code == 204
 }
 
-// Code gets the status code for the ipam Ip addresses delete no content response
-func (o *IpamIPAddressesDeleteNoContent) Code() int {
-	return 204
-}
-
 func (o *IpamIPAddressesDeleteNoContent) Error() string {
 	return fmt.Sprintf("[DELETE /ipam/ip-addresses/{id}/][%d] ipamIpAddressesDeleteNoContent ", 204)
 }

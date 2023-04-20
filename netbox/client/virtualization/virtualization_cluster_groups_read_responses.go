@@ -88,11 +88,6 @@ func (o *VirtualizationClusterGroupsReadOK) IsCode(code int) bool {
 	return code == 200
 }
 
-// Code gets the status code for the virtualization cluster groups read o k response
-func (o *VirtualizationClusterGroupsReadOK) Code() int {
-	return 200
-}
-
 func (o *VirtualizationClusterGroupsReadOK) Error() string {
 	return fmt.Sprintf("[GET /virtualization/cluster-groups/{id}/][%d] virtualizationClusterGroupsReadOK  %+v", 200, o.Payload)
 }
