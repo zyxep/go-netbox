@@ -64782,7 +64782,10 @@
                     "in" : "body",
                     "name" : "data",
                     "required" : true,
-                    "schema" : { "$ref" : "#/definitions/WritableAvailableIP" }
+                    "schema" : { 
+                        "items" : { "$ref" : "#/definitions/WritableAvailableIP" },
+                        "type" : "array"
+                      }
                   } ],
               "responses" : { "201" : { 
                       "description" : "",
@@ -66937,7 +66940,10 @@
                     "in" : "body",
                     "name" : "data",
                     "required" : true,
-                    "schema" : { "$ref" : "#/definitions/WritableAvailableIP" }
+                    "schema" : { 
+                        "items" : { "$ref" : "#/definitions/WritableAvailableIP" },
+                        "type" : "array"
+                      }
                   } ],
               "responses" : { "201" : { 
                       "description" : "",
@@ -66977,7 +66983,10 @@
                     "in" : "body",
                     "name" : "data",
                     "required" : true,
-                    "schema" : { "$ref" : "#/definitions/PrefixLength" }
+                    "schema" : { 
+                        "items" : { "$ref" : "#/definitions/PrefixLength" },
+                        "type" : "array"
+                      }
                   } ],
               "responses" : { "201" : { 
                       "description" : "",

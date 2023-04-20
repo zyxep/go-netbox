@@ -44,7 +44,7 @@ export VERSION=${LAST_NETBOX_VERSION}
 cd netbox-docker
 git config advice.detachedHead false
 #git checkout ${DOCKER_VERSION}
-#mv docker-compose.override.yml.example docker-compose.override.yml
+cp docker-compose.override.yml.example docker-compose.override.yml
 sed -i 's/netbox-media-files/gonetbox-media-files/g' docker-compose.yml
 sed -i 's/netbox-postgres-data/gonetbox-postgres-data/g' docker-compose.yml
 sed -i 's/netbox-redis-data/gonetbox-redis-data/g' docker-compose.yml
